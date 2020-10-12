@@ -2,8 +2,9 @@
 
 include("Telegram.php");
 require_once('service.php');
+$bot_id = getenv('BOT_ID');
 
-$telegram = new Telegram(BOT_ID);
+$telegram = new Telegram($bot_id);
 $service = new Service($telegram);
 
 $text = $telegram->Text();
