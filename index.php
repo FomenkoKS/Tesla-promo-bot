@@ -1,7 +1,6 @@
 <?php
 
 include("Telegram.php");
-include("config.php");
 require_once('service.php');
 
 $telegram = new Telegram(BOT_ID);
